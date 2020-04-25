@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+            <div class="form-group">
+              <label for="uName">UserName:</label>
+              <input type="text" class="form-control" [(ngModel)]="userName">
+              <p>{{userName}}</p>
+            </div>
+            <input type="button" class="btn btn-danger" [disabled]="isUserEmpty()" (click)="resetUserName()" value="Reset">
+    </div>
+</div>
